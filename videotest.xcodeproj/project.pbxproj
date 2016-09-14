@@ -254,6 +254,10 @@
 		1C1746A11D893A2E008C63EC /* XLAnchorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C17469F1D893A2E008C63EC /* XLAnchorInfoView.xib */; };
 		1C1746A51D894123008C63EC /* XLCatEarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1746A31D894123008C63EC /* XLCatEarView.m */; };
 		1C1746A61D894123008C63EC /* XLCatEarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1746A41D894123008C63EC /* XLCatEarView.xib */; };
+		1C1746AA1D894640008C63EC /* XLLiveEndView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1746A81D894640008C63EC /* XLLiveEndView.m */; };
+		1C1746AB1D894640008C63EC /* XLLiveEndView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1746A91D894640008C63EC /* XLLiveEndView.xib */; };
+		1C1746AF1D894C90008C63EC /* XLUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1746AD1D894C90008C63EC /* XLUserInfoView.m */; };
+		1C1746B01D894C90008C63EC /* XLUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1746AE1D894C90008C63EC /* XLUserInfoView.xib */; };
 		1C5EE92B1D86563F00703CE1 /* LFAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EE8F61D86563F00703CE1 /* LFAudioCapture.m */; };
 		1C5EE92C1D86563F00703CE1 /* LFVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EE8F81D86563F00703CE1 /* LFVideoCapture.m */; };
 		1C5EE92D1D86563F00703CE1 /* LFAVEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EE8FC1D86563F00703CE1 /* LFAVEncoder.mm */; };
@@ -843,6 +847,12 @@
 		1C1746A21D894123008C63EC /* XLCatEarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCatEarView.h; sourceTree = "<group>"; };
 		1C1746A31D894123008C63EC /* XLCatEarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCatEarView.m; sourceTree = "<group>"; };
 		1C1746A41D894123008C63EC /* XLCatEarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCatEarView.xib; sourceTree = "<group>"; };
+		1C1746A71D894640008C63EC /* XLLiveEndView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLiveEndView.h; sourceTree = "<group>"; };
+		1C1746A81D894640008C63EC /* XLLiveEndView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLLiveEndView.m; sourceTree = "<group>"; };
+		1C1746A91D894640008C63EC /* XLLiveEndView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLLiveEndView.xib; sourceTree = "<group>"; };
+		1C1746AC1D894C90008C63EC /* XLUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUserInfoView.h; sourceTree = "<group>"; };
+		1C1746AD1D894C90008C63EC /* XLUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLUserInfoView.m; sourceTree = "<group>"; };
+		1C1746AE1D894C90008C63EC /* XLUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLUserInfoView.xib; sourceTree = "<group>"; };
 		1C5EE8F51D86563F00703CE1 /* LFAudioCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFAudioCapture.h; sourceTree = "<group>"; };
 		1C5EE8F61D86563F00703CE1 /* LFAudioCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAudioCapture.m; sourceTree = "<group>"; };
 		1C5EE8F71D86563F00703CE1 /* LFVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFVideoCapture.h; sourceTree = "<group>"; };
@@ -1213,6 +1223,12 @@
 				1C1743CB1D89266E008C63EC /* SafeObject */,
 				1C1743DC1D89266E008C63EC /* XLWatchLiveCell.h */,
 				1C1743DD1D89266E008C63EC /* XLWatchLiveCell.m */,
+				1C1746AC1D894C90008C63EC /* XLUserInfoView.h */,
+				1C1746AD1D894C90008C63EC /* XLUserInfoView.m */,
+				1C1746AE1D894C90008C63EC /* XLUserInfoView.xib */,
+				1C1746A71D894640008C63EC /* XLLiveEndView.h */,
+				1C1746A81D894640008C63EC /* XLLiveEndView.m */,
+				1C1746A91D894640008C63EC /* XLLiveEndView.xib */,
 				1C1746A21D894123008C63EC /* XLCatEarView.h */,
 				1C1746A31D894123008C63EC /* XLCatEarView.m */,
 				1C1746A41D894123008C63EC /* XLCatEarView.xib */,
@@ -2294,6 +2310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1745D91D892A5D008C63EC /* lookup_amatorka.png in Resources */,
+				1C1746B01D894C90008C63EC /* XLUserInfoView.xib in Resources */,
 				1C16166E1D8258F8004151D6 /* LaunchScreen.storyboard in Resources */,
 				1C17469C1D89353D008C63EC /* danmu.plist in Resources */,
 				1C1746891D892A5D008C63EC /* License.txt in Resources */,
@@ -2301,6 +2318,7 @@
 				1C1746A11D893A2E008C63EC /* XLAnchorInfoView.xib in Resources */,
 				1C1745DC1D892A5D008C63EC /* lookup_soft_elegance_2.png in Resources */,
 				1C1744511D892A31008C63EC /* LICENSE in Resources */,
+				1C1746AB1D894640008C63EC /* XLLiveEndView.xib in Resources */,
 				1C1744531D892A31008C63EC /* LICENSE in Resources */,
 				1C5EE94D1D8659CC00703CE1 /* LiveListCell.xib in Resources */,
 				1C1746A61D894123008C63EC /* XLCatEarView.xib in Resources */,
@@ -2318,6 +2336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1746AA1D894640008C63EC /* XLLiveEndView.m in Sources */,
 				1C1746611D892A5D008C63EC /* GPUImageSmoothToonFilter.m in Sources */,
 				1C1746581D892A5D008C63EC /* GPUImageSaturationBlendFilter.m in Sources */,
 				1C1746511D892A5D008C63EC /* GPUImageRawDataInput.m in Sources */,
@@ -2445,6 +2464,7 @@
 				1C1745EF1D892A5D008C63EC /* GPUImageClosingFilter.m in Sources */,
 				1C1745F11D892A5D008C63EC /* GPUImageColorBurnBlendFilter.m in Sources */,
 				1C5EE9361D86563F00703CE1 /* LFGPUImageBeautyFilter.m in Sources */,
+				1C1746AF1D894C90008C63EC /* XLUserInfoView.m in Sources */,
 				1C1744441D892A31008C63EC /* BarrageDescriptor.m in Sources */,
 				1C1746001D892A5D008C63EC /* GPUImageDilationFilter.m in Sources */,
 				1C5EEA231D865ABF00703CE1 /* UIImage+MultiFormat.m in Sources */,

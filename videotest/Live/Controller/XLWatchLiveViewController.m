@@ -46,7 +46,7 @@ static NSString *reuserID = @"cell";
     XLWatchLiveCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuserID forIndexPath:indexPath];
     
     cell.image = self.image;
-//    cell.allModels = self.allModels;
+    cell.allModels = self.allModels;
      cell.hotModel = self.hotModel;
     cell.parentVC = self;
     

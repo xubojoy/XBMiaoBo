@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) LiveListModel *hotModel;
 
-//@property (nonatomic, strong) NSArray *allModels;
+@property (nonatomic, strong) NSArray *allModels;
 
 @property (nonatomic, copy) void (^selectBlock)(LiveListModel *hotModel);
 

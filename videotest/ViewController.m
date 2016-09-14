@@ -80,7 +80,7 @@
         XLWatchLiveViewController *watch = [[XLWatchLiveViewController alloc] init];
         
         watch.hotModel = self.liveListModel;
-        
+        watch.allModels = self.liveListModelArray;
         LiveListCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
         watch.image = cell.bigImageView.image;
         [self presentViewController:watch animated:YES completion:nil];

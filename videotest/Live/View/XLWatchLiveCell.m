@@ -11,10 +11,10 @@
 #import "XLBottomToolView.h"
 #import "XLAnchorInfoView.h"
 #import "XLCatEarView.h"
-//#import "XLLiveEndView.h"
+#import "XLLiveEndView.h"
 #import "BarrageRenderer.h"
 //#import "UIViewController+Extension.h"
-//#import "XLUserInfoView.h"
+#import "XLUserInfoView.h"
 #import "NSSafeObject.h"
 //#import "XLLiveTool.h"
 //#import "UMSocial.h"
@@ -39,9 +39,9 @@
 /** 粒子动画 */
 @property(nonatomic, weak) CAEmitterLayer *emitterLayer;
 /** 直播结束的界面 */
-//@property (nonatomic, weak) XLLiveEndView *endView;
+@property (nonatomic, weak) XLLiveEndView *endView;
 //
-//@property (nonatomic, weak) XLUserInfoView *userinfoView;
+@property (nonatomic, weak) XLUserInfoView *userinfoView;
 
 @property (nonatomic, assign) BOOL hidden;
 @end
@@ -133,19 +133,19 @@
         
         
         [anchorView setSelectBlock:^(LiveListModel *hotModel) {
-            
+            NSLog(@">>>>>>>>>>>>>点击了一个");
            __weak typeof(self) weakSelf = self;
             
-//            XLUserInfoView *userInfoView = [XLUserInfoView userInfoView];
-//            weakSelf.userinfoView = userInfoView;
-//            
-//            [userInfoView userWithHotModel:hotModel ofView:weakSelf.parentVC.view];
-//            
-//            userInfoView.selectedBlock = ^(){
-//            
-//               
-//                 self.hotModel = hotModel;
-//            };
+            XLUserInfoView *userInfoView = [XLUserInfoView userInfoView];
+            weakSelf.userinfoView = userInfoView;
+            
+            [userInfoView userWithHotModel:hotModel ofView:weakSelf.parentVC.view];
+            
+            userInfoView.selectedBlock = ^(){
+            
+               
+                 self.hotModel = hotModel;
+            };
         }];
         
        
@@ -170,7 +170,7 @@
         
         [self addSubview:catEarView];
         
-        catEarView.hidden = NO;
+        catEarView.hidden = YES;;
         
 //        [catEarView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCatEar)]];
         [catEarView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -234,29 +234,29 @@
     return _emitterLayer;
 }
 
-//- (XLLiveEndView *)endView
-//{
-//    __weak typeof(self) weakSelf = self;
-//    
-//    if (!_endView) {
-//        XLLiveEndView *endView = [XLLiveEndView liveEndView];
-//        endView.hotModel = self.hotModel;
-//        
-//        [self.contentView addSubview:endView];
-//        [endView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.edges.equalTo(@0);
-//        }];
-//        [endView setQuitBlock:^{
-//            
-//            [weakSelf quit];
-//        }];
-//        [endView setLookOtherBlock:^{
-//            [weakSelf clickCatEar];
-//        }];
-//        _endView = endView;
-//    }
-//    return _endView;
-//}
+- (XLLiveEndView *)endView
+{
+    __weak typeof(self) weakSelf = self;
+    
+    if (!_endView) {
+        XLLiveEndView *endView = [XLLiveEndView liveEndView];
+        endView.hotModel = self.hotModel;
+        
+        [self.contentView addSubview:endView];
+        [endView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(@0);
+        }];
+        [endView setQuitBlock:^{
+            
+            [weakSelf quit];
+        }];
+        [endView setLookOtherBlock:^{
+            [weakSelf clickCatEar];
+        }];
+        _endView = endView;
+    }
+    return _endView;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -282,7 +282,7 @@
     
     [self plarFLV:hotModel.flv placeHolderUrl:hotModel.bigpic];
     
-//    [self setAllModels:self.allModels];
+    [self setAllModels:self.allModels];
 }
 
 
@@ -394,6 +394,7 @@
                     
                     //显示猫耳朵
                     weakSelf.catEarView.hidden = NO;
+                    self.catEarView.hotModel = self.allModels[arc4random_uniform((int)self.allModels.count)];
                 }
             });
         }
@@ -505,10 +506,10 @@ long _index = 0;
 
 - (void)setAllModels:(NSArray *)allModels
 {
-//    _allModels = allModels;
-//    
-//    self.anchorView.allModels = allModels;
-//    
+    _allModels = allModels;
+    
+    self.anchorView.allModels = allModels;
+    
 //    self.catEarView.hotModel = allModels[arc4random_uniform((int)allModels.count)];
 }
 

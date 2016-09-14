@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) LiveListModel *hotModel;
 
-//@property (nonatomic, strong) NSArray *allModels;
+@property (nonatomic, strong) NSArray *allModels;
 
 @property (nonatomic, strong) UIImage *image;
 @end
