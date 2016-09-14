@@ -23,11 +23,13 @@
 #import "UIImageView+WebCache.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 #define MR_SHORTHAND
 #import "AppStatus.h"
 #import "JSONModel.h"
 #import "JSONKit.h"
+#import "Masonry.h"
 #import "HttpRequestFacade.h"
 #import "Reachability.h"
 #import "Constant.h"
@@ -46,7 +48,9 @@
 #import "UILabel+Block.h"
 #import "FunctionUtils.h"
 #import "AppDelegate.h"
-
+#import "UIButton+Extension.h"
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
 
 #endif
 

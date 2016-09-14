@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LiveListStore.h"
+#import "XLWatchLiveViewController.h"
 @interface ViewController ()
 
 @end
@@ -74,7 +75,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-  
+    if (self.liveListModelArray.count > 0) {
+        self.liveListModel = self.liveListModelArray[indexPath.row];
+        XLWatchLiveViewController *watch = [[XLWatchLiveViewController alloc] init];
+        
+        watch.hotModel = self.liveListModel;
+        
+        LiveListCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        watch.image = cell.bigImageView.image;
+        [self presentViewController:watch animated:YES completion:nil];
+    }
 
 }
 
