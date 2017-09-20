@@ -16,15 +16,15 @@
 @property (nonatomic ,strong) NSString<Optional> *flv;
 @property (nonatomic ,assign) int gender;
 @property (nonatomic ,strong) NSString<Optional> *gps;
-@property (nonatomic ,assign) int grade;
-@property (nonatomic ,assign) int level;
+//@property (nonatomic ,assign) int grade;
+//@property (nonatomic ,assign) int level;
 @property (nonatomic ,strong) NSString<Optional> *myname;
 @property (nonatomic ,assign) int roomid;
 @property (nonatomic ,assign) int serverid;
-@property (nonatomic ,strong) NSString<Optional> *signatures;
+//@property (nonatomic ,strong) NSString<Optional> *signatures;
 @property (nonatomic ,strong) NSString<Optional> *smallpic;
 @property (nonatomic ,assign) int starlevel;
-@property (nonatomic ,strong) NSString *userId;
+@property (nonatomic ,strong) NSString<Optional> *userId;
 @property (nonatomic ,assign) int useridx;
 
 
